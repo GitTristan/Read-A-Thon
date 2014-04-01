@@ -1,7 +1,7 @@
 require "spec_helper"
 
 feature "Book management" do
-  scenario "User manges books" do
+  scenario "User manages books" do
     visit root_path
     
     click_link "Books"
@@ -12,7 +12,7 @@ feature "Book management" do
     
     click_button "Save"
     
-    expect(pages).to have_content "Garfield"
-    expect(pages).to_not have_content "Save"
+    expect(page).to have_content "Garfield"
+    expect(page).to_not have_content "Save"
   end
 end
