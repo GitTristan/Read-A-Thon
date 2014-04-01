@@ -1,5 +1,5 @@
 Readathon::Application.routes.draw do
   root "pages#index"
   
-  resources :books, only: [:index, :new]
+  resources :books, only: [:index, :new, :create]
 end
