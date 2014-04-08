@@ -1,7 +1,7 @@
 <%= link_to "Add book", new_book_path %>
 
-<%= @books.each do | book | %>
-<%= div_for book do %>
-  <%= book.title %>
+<% @books.each do | book | %>
+  <%= div_for book do %>
+    <%= link_to book.title, book_path(book) %>
   <% end %>
 <% end %>
